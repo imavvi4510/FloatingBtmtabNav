@@ -7,11 +7,11 @@ LogBox.ignoreAllLogs();
 const App = () => {
     return (
 
-<View style={{flex:1}}>
-<View style={{alignContent:'center',justifyContent:'center',flex:21,alignItems:'center',top:450,}}>
+<View style={{flex:1,backgroundColor:'yellow'}}>
+{/* <View style={{justifyContent:'center',alignItems:'center',backgroundColor:'grey',position:'absolute',top:150,bottom:0,right:0,left:0}}>
 
     <AddButton/>
-</View>
+</View> */}
 <TabBar />
 
 </View>

@@ -1,0 +1,17 @@
+com/abhi/generated/BasePackageList.java
+ com.abhi.generated.BasePackageList
+com/abhi/MainActivity.java
+ com.abhi.MainActivity
+ com.abhi.MainActivity$1
+com/abhi/MainApplication.java
+ com.abhi.MainApplication
+ com.abhi.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/floatingbtn/ReactNativeFlipper.java
+ com.floatingbtn.ReactNativeFlipper
+ com.floatingbtn.ReactNativeFlipper$1
+ com.floatingbtn.ReactNativeFlipper$2
+ com.floatingbtn.ReactNativeFlipper$2$1
+com/abhi/BuildConfig.java
+ com.abhi.BuildConfig

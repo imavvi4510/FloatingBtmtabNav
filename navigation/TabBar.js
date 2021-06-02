@@ -16,16 +16,18 @@ const TabBar = (barColor) => {
     <NavigationContainer>
     <BottomBar.Navigator
       tabBar={(props) => (
-        <View style={styles.navigatorContainer}>
-          <BottomTabBar
+
+    <View style={{position:'absolute', left: 0,right:0, bottom:0}}>
+    <BottomTabBar
             {...props}
-          />
-          {IS_IPHONE_X && (
-            <View style={[styles.xFillLine, {
-              backgroundColor: barColor
-            }]}/>
-          )}
-        </View>
+    />
+<View style={{position:'absolute', left:'50%',top:'30%'}}>
+<AddButton/>
+</View>
+
+    </View>
+
+
       )}
       tabBarOptions={{
         showIcon: true,
@@ -61,15 +63,7 @@ const TabBar = (barColor) => {
           )
         }}
       />
-      {/* <BottomBar.Screen
-        name=" "
-        component={EmptyScreen}
-        options={{
-          tabBarIcon: () => (
-            <AddButton/>
-          )
-        }}
-      /> */}
+
       <BottomBar.Screen
         name="Messages"
         component={EmptyScreen}
@@ -105,10 +99,10 @@ export default TabBar
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1
+    flex: 1
   },
   navigatorContainer: {
-    // position: 'absolute',
+    position: 'absolute',
     bottom: 10,
     left: 0,
     right: 0,
@@ -119,6 +113,8 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.22,
     shadowRadius: 2.22,
+    backgroundColor:'red',
+    zIndex:1000
   },
   navigator: {
     borderTopWidth: 0,
