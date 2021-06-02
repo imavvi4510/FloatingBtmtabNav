@@ -61,7 +61,7 @@ const TabBar = (barColor) => {
           )
         }}
       />
-      <BottomBar.Screen
+      {/* <BottomBar.Screen
         name=" "
         component={EmptyScreen}
         options={{
@@ -69,7 +69,7 @@ const TabBar = (barColor) => {
             <AddButton/>
           )
         }}
-      />
+      /> */}
       <BottomBar.Screen
         name="Messages"
         component={EmptyScreen}
@@ -105,11 +105,11 @@ export default TabBar
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    // flex: 1
   },
   navigatorContainer: {
-    position: 'absolute',
-    bottom: 0,
+    // position: 'absolute',
+    bottom: 10,
     left: 0,
     right: 0,
     shadowColor: "#000",

@@ -4,10 +4,11 @@ import AddButton from '../animatedButton/animatedButton';
 
 const EmptyScreen = () => {
   return (
-    <View style={{display:'flex',flex:1,alignItems:'center',justifyContent:'center'}}>
+    <>
 
-    <Text>Floating Button Example</Text>
-    </View>
+    {/* <Text>Floating Button Example</Text> */}
+
+    </>
   )
 }
 

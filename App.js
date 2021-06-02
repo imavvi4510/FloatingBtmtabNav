@@ -1,13 +1,24 @@
-
-import React from 'react';
-import  TabBar1  from './navigation/TabBar';
+import React from 'react'
+import { View, Text } from 'react-native'
+import TabBar from './navigation/TabBar'
 import { LogBox } from 'react-native';
+import AddButton from './animatedButton/animatedButton';
 LogBox.ignoreAllLogs();
-export default function App() {
-  return (
-    <TabBar1
-      barColor="#F6F7EB"
-    />
-  );
+const App = () => {
+    return (
+
+<View style={{flex:1}}>
+<View style={{alignContent:'center',justifyContent:'center',flex:21,alignItems:'center',top:450,}}>
+
+    <AddButton/>
+</View>
+<TabBar />
+
+</View>
+
+
+
+    )
 }
 
+export default App

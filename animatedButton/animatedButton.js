@@ -57,13 +57,16 @@ export default class AddButton extends React.Component {
 
         return (
             <View style={{ position: "absolute", alignItems: "center" }}>
-                <Animated.View style={{ position: "absolute", left: thermometerX, top: thermometerY }}>
+
+               <Animated.View style={{ position: "absolute", left: thermometerX, top: thermometerY }}>
                     <View style={styles.secondaryButton}>
                     <TouchableOpacity onPress={()=>Alert.alert('wanna  call ')}>
                     <Zocial name="call" size={24} color="#fff" />
                    </TouchableOpacity>
                     </View>
                 </Animated.View>
+
+
 
                 <Animated.View style={{ position: "absolute", left: pulseX, top: pulseY }}>
                     <View style={styles.secondaryButton}>
@@ -75,7 +78,7 @@ export default class AddButton extends React.Component {
                 <Animated.View style={[styles.button, sizeStyle]}>
                     <TouchableHighlight onPress={this.handlePress} underlayColor="#7F58FF">
                         <Animated.View style={{ transform: [{ rotate: rotation }] }}>
-                            <FontAwesome5 name="plus" size={24} color="#FFF" />
+                            <FontAwesome5 name="plus" size={50} color="#FFF" />
                         </Animated.View>
                     </TouchableHighlight>
                 </Animated.View>
@@ -91,7 +94,7 @@ const styles = StyleSheet.create({
         width: 72,
         height: 72,
         borderRadius: 36,
-        backgroundColor: "#7F58FF",
+        backgroundColor: "red",
         position: "absolute",
         marginTop: -60,
         shadowColor: "#7F58FF",
@@ -108,6 +111,6 @@ const styles = StyleSheet.create({
         width: 48,
         height: 48,
         borderRadius: 24,
-        backgroundColor: "#7F58FF"
+        backgroundColor: "#7F58FF",
     }
 });
