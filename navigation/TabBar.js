@@ -3,9 +3,8 @@ import { StyleSheet, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { BottomTabBar, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { FontAwesome as Icon } from '@expo/vector-icons';
-import  TabBarAdvancedButton  from '../components/TabBarAdvance';
 import  EmptyScreen  from '../screens/EmptyScreen';
-import { IS_IPHONE_X } from '../utlis/index';
+
 import AddButton from '../animatedButton/animatedButton';
 
 const BottomBar = createBottomTabNavigator();
@@ -101,21 +100,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   },
-  navigatorContainer: {
-    position: 'absolute',
-    bottom: 10,
-    left: 0,
-    right: 0,
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 1,
-    },
-    shadowOpacity: 0.22,
-    shadowRadius: 2.22,
-    backgroundColor:'red',
-    zIndex:1000
-  },
+
   navigator: {
     borderTopWidth: 0,
     backgroundColor: 'transparent',
